@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ *
+ */
+function cavalla_blog_update_8001() {
+  \Drupal::service('config.installer')->installDefaultConfig('module', 'cavalla_blog');
+}
+
+/**
+ *
+ */
+function cavalla_blog_update_8002() {
+  \Drupal::service('config.installer')->installDefaultConfig('module', 'cavalla_blog');
+}
+
+function cavalla_blog_update_8003() {
+  \Drupal::service('config.installer')->installDefaultConfig('module', 'cavalla_blog');
+}
+
+
+function cavalla_blog_update_8004() {
+  \Drupal::service('config.installer')->installDefaultConfig('module', 'cavalla_blog');
+}
+
+function cavalla_blog_update_8005() {
+  \Drupal::service('config.installer')->installDefaultConfig('module', 'cavalla_blog');
+}
+
+
+function cavalla_blog_update_8006() {
+  \Drupal::service('config.installer')->installDefaultConfig('module', 'cavalla_blog');
+}
+
+function cavalla_blog_update_8007() {
+  \Drupal::service('config.installer')->installDefaultConfig('module', 'cavalla_blog');
+}

@@ -1,0 +1,36 @@
+uuid: 9d80aa3e-74ff-4b67-a3ef-72d52fdf36dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testimonial_widget
+    - paragraphs.paragraphs_type.cavalla_testimonials
+    - paragraphs.paragraphs_type.cavalla_testimonials_field
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 5_-t_ASrHLOa6VlL0E-UJROfeWEj8s1fuy1ZvTBhQj0
+id: paragraph.cavalla_testimonials.field_testimonial_widget
+field_name: field_testimonial_widget
+entity_type: paragraph
+bundle: cavalla_testimonials
+label: 'Testimonial Widgets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cavalla_testimonials_field: cavalla_testimonials_field
+    target_bundles_drag_drop:
+      cavalla_testimonials:
+        weight: 3
+        enabled: false
+      cavalla_testimonials_field:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

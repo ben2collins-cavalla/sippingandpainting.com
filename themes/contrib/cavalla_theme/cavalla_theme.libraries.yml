@@ -1,0 +1,20 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external }
+      https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css: { type: external }
+      src/css/animate.css : {}
+      src/css/swiper.min.css : {}
+      src/css/style.css : {}
+      src/css/menu.css : {}
+      src/fonts/fonts.css : {}
+  js:
+    src/js/swiper.min.js: {}
+    src/js/scrollmagic.js: {}
+    src/js/bootstrap.js: {}
+    src/js/classie.js: {}
+    src/js/main.js: {}
+    src/js/script.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,24 @@
+<header id="header" class="header" role="banner" aria-label="Site header">
+    <nav class="secondary-nav nav">
+      <div class="container">
+        {{ page.secondary_menu }}
+      </div>
+    </nav>
+  <nav class="primary-nav  nav container">
+      <a class="navbar-brand" href="#"><h1>Sipping and Painting </h1></a>
+      <div id="showMenu">
+        <button  class="menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <section>{{ page.cart }}</section>
+  </nav>
+
+  <div class="menu-wrap">
+      <div class="icon-list">
+      {{ page.primary_menu }}
+      <div>
+	</div>
+</header>

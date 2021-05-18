@@ -1,0 +1,2 @@
+  - export DEPLOYPATH=/home/vpthxhyo6am3/public_html/
+    - /bin/cp -R  * $DEPLOYPATH

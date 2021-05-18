@@ -1,0 +1,39 @@
+<section class="webform_bundle">
+    <aside class="w-50 position-relative d-table-cell webform_section">
+        <section class="webform">
+          {%  if true in content.field_cavalla_wf_intro_title[0] %}
+            <h1>{{ content.field_cavalla_wf_intro_title[0] }}</h1>
+          {% endif %}
+          {%  if true in content.field_cavalla_wf_intro_text %}
+            <p class="lead">{{ content.field_cavalla_wf_intro_text[0] }}</p>
+          {% endif %}
+          <section class="my-4"> {{ content.field_cavalla_wf_webform[0] }} </section>
+        </section>
+    </aside>
+    <aside class="w-50 position-relative d-table-cell contactInfo_section">
+        {{ content.field_cavalla_wf_map[0] }}
+        <div class="contactInfo">
+          <address>
+            <h1>{{ content.field_cavalla_wf_company_name[0] }}</h1>
+            <p>
+              <b><u>Address</u></b></br>
+              {{ content.field_cavalla_wf_address_street[0] }}</br>
+              {{ content.field_cavalla_wf_address_city[0] }},{{ content.field_cavalla_wf_address_state[0] }} {{ content.field_cavalla_wf_address_zipcode[0] }}</br>
+            </p>
+             <p>
+              <b><u>Hours</u></b></br>
+               {{ content.field_cavalla_wf_work_hours[0] }}
+             </p>
+             <p>
+              <b><u>Email</u></b> </br>
+              <a href="mailto:{{ content.field_cavalla_wf_email[0] }}?subject=Inquiry">{{ content.field_cavalla_wf_email[0] }}</a>
+            </p>
+            <p>
+              <b><u>Telephone</u></b></br>
+              {{ content.field_cavalla_wf_telephone[0] }}
+            </p>
+            {{ content.field_cavalla_wf_link[0] }}
+          </address>
+        </div>
+    </aside>
+</section>

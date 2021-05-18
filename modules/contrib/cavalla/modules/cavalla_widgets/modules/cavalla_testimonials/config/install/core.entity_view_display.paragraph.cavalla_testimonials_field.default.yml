@@ -1,0 +1,52 @@
+uuid: 5c69ec45-279a-4f6e-b57d-63ce8dc26e15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cavalla_testimonials_field.field_testimonial_field_image
+    - field.field.paragraph.cavalla_testimonials_field.field_testimonial_field_job
+    - field.field.paragraph.cavalla_testimonials_field.field_testimonial_field_name
+    - field.field.paragraph.cavalla_testimonials_field.field_testimonial_field_quote
+    - paragraphs.paragraphs_type.cavalla_testimonials_field
+  module:
+    - image
+_core:
+  default_config_hash: eo3FHb5vGI-kRG0fRFbqh6nmyYJ1LvcnhLtwvd9Spwc
+id: paragraph.cavalla_testimonials_field.default
+targetEntityType: paragraph
+bundle: cavalla_testimonials_field
+mode: default
+content:
+  field_testimonial_field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_testimonial_field_job:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_testimonial_field_name:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_testimonial_field_quote:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  search_api_excerpt: true

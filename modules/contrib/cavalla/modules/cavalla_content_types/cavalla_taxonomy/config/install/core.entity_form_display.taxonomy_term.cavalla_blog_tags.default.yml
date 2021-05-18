@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.cavalla_blog_tags.field_cavalla_taxonomy_hero_img
+    - field.field.taxonomy_term.cavalla_blog_tags.field_cavalla_taxonomy_hide_himg
+    - image.style.thumbnail
+    - taxonomy.vocabulary.cavalla_blog_tags
+  module:
+    - field_group
+    - image
+    - path
+third_party_settings:
+  field_group:
+    group_cavalla_taxonomy_feed:
+      children:
+        - field_cavalla_taxonomy_node_feed
+      parent_name: ''
+      weight: 2
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Activate Feed'
+    group_cavalla_taxonomy_hero_img:
+      children:
+        - field_cavalla_taxonomy_hero_img
+        - field_cavalla_taxonomy_hide_himg
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Hero Image'
+id: taxonomy_term.cavalla_blog_tags.default
+targetEntityType: taxonomy_term
+bundle: cavalla_blog_tags
+mode: default
+content:
+  field_cavalla_taxonomy_hero_img:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_cavalla_taxonomy_hide_himg:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true

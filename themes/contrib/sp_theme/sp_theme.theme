@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * sp_theme file.
+ */
+
+
+
+
+/**
+ * Implements hook_preprocessor().
+ * Lets us define our node templates in this module.
+ */
+
+function sp_theme_preprocess_page(array &$variables) {
+
+  if (strpos($_SERVER['REQUEST_URI'], 'checkout/')){
+    $variables['page_title'] = 'Checkout';
+  }
+  else{
+      $variables['page_title'] = 'Cart';
+  }
+}
